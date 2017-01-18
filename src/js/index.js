@@ -30,6 +30,10 @@ $(document).ready(() => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMapEnabled = true;
 
+    renderer.domElement.style.position = "relative";
+    renderer.domElement.style.width = "100%";
+    renderer.domElement.style.height = "100%";
+
     $('#sketch').append(renderer.domElement);
   }
 
